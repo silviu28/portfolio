@@ -1,25 +1,25 @@
+import ReactDOM from "react-dom";
 import "../App.css";
 import React from "react";
 
 interface IProjectModalProps {
-    closeEvent: React.MouseEventHandler<HTMLButtonElement>,
+    closeEvent: () => void,
     isOpen: boolean,
-    children: React.ReactNode
+    children?: React.ReactNode
 }
 
 const ProjectModal: React.FC<IProjectModalProps> = ({closeEvent, isOpen, children}) => {
-        let currentClass: string;
-        if (isOpen)
-            currentClass = "modal block";
-        else
-            currentClass = "modal none";
-    return (
-        <div className={currentClass}>
+    if (!isOpen)
+        return null;
+
+    return ReactDOM.createPortal(
+        <div className={"project-modal fade-in"}>
             <section className={"project-modal-main"}>
                 {children}
+                <button onClick={closeEvent}>Close</button>
             </section>
-            <button onClick={closeEvent}>Close</button>
-        </div>
+        </div>,
+        document.body
     );
 }
 
