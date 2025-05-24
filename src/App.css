@@ -23,10 +23,11 @@
   text-align: center;
 }
 
-.project-container h {
+.project-container h1 {
   color: black;
   font-weight: bold;
   text-align: center;
+  font-size: 16px;
 }
 
 .project-container p {
