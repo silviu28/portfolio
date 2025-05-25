@@ -11,31 +11,58 @@ function App() {
     const closeModal = () => setIsOpen(false);
     const openModal1: () => void = () => {
         setModalContent(
-            <p>Restaurant</p>
+            <>
+                <div className={"horizontal-stack"}>
+                    <img src={"/restaurant1.png"}/>
+                    <img src={"/restaurant2.png"}/>
+                </div>
+                <p>Restaurant catalog. <a href={"https://github.com/silviu28/Restaurant-app"}>Code</a></p>
+            </>
         );
         setIsOpen(true);
     };
     const openModal2: () => void = () => {
         setModalContent(
-            <p>Top-down shooter</p>
+            <>
+                <div className={"horizontal-stack"}>
+                    <img src={"/shooter1.png"}/>
+                    <img src={"/shooter2.png"}/>
+                </div>
+                <p>Top-down shooter. <a href={"https://github.com/silviu28/ProiectMC"}>Code</a></p>
+            </>
         );
         setIsOpen(true);
     };
     const openModal3: () => void = () => {
         setModalContent(
-            <p>Programmer calculator</p>
+            <>
+                <div className={"horizontal-stack"}>
+                    <img src={"/calc.png"}/>
+                </div>
+                <p>Programmer calculator. <a href={"https://github.com/silviu28/C-Sharp-Calculator"}>Code</a></p>
+            </>
         );
         setIsOpen(true);
     };
     const openModal4: () => void = () => {
         setModalContent(
-            <p>Card matching game</p>
+            <>
+                <div className={"horizontal-stack"}>
+                    <img src={"/cards.png"}/>
+                </div>
+                <p>Card matching game. <a href={"https://github.com/silviu28/Card-Matching-Game"}>Code</a></p>
+            </>
         );
         setIsOpen(true);
     };
     const openModal5: () => void = () => {
         setModalContent(
-            <p>Companion app</p>
+            <>
+                <div className={"horizontal-stack"}>
+                    <img src={"/controller.png"}/>
+                </div>
+                <p>Companion app. <a href={"https://github.com/silviu28/Food-for-stray-animals"}>Code</a></p>
+            </>
         );
         setIsOpen(true);
     };
@@ -87,7 +114,7 @@ function App() {
                 <h2>Android, Java, Bluetooth, Arduino</h2>
             </ProjectContainer>
         </div>
-    </>)
+    </>);
 }
 
 export default App

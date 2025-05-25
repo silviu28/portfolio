@@ -13,10 +13,9 @@ const ProjectModal: React.FC<IProjectModalProps> = ({closeEvent, isOpen, childre
         return null;
 
     return ReactDOM.createPortal(
-        <div className={"project-modal fade-in"}>
+        <div className={"project-modal fade-in"} onClick={closeEvent}>
             <section className={"project-modal-main"}>
                 {children}
-                <button onClick={closeEvent}>Close</button>
             </section>
         </div>,
         document.body
