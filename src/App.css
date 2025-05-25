@@ -1,20 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/seven-segment');
+
+p, h1, h2 {
+  font-family: 'Arimo', sans-serif;
+}
+
 .grid-panel {
+  margin-left: 1vw;
+  margin-right: 1vw;
   display: grid;
+  padding: 1vw;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(30, 30, 30, 0.91);
+  border-radius: .7vw;
 }
 
 .project-container {
-  background-color: rgba(128, 128, 128, .5);
+  background-color: rgba(128, 128, 128, .1);
   padding: 16px;
-  border-radius: 2%;
+  border-radius: .5vw;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 2vw .5vw;
+  margin: .5vw .5vw;
   min-width: 18vw;
   min-height: 18vw;
   max-width: 300vw;
@@ -24,23 +34,19 @@
 }
 
 .project-container h1 {
-  color: black;
   font-weight: bold;
   text-align: center;
   font-size: 16px;
 }
 
 .project-container p {
-  color: black;
   text-align: inherit;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .project-container h2 {
   font-weight: lighter;
-  font-size: 10px;
-  color: black;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
+  font-size: 12px;
 }
 
 .fade-in {
@@ -60,9 +66,9 @@
 }
 
 .project-container img {
-  border-radius: 2%;
+  border-radius: .4vw;
   display: flex;
-  width: 50%;
+  width: auto;
   height: 100%;
 }
 
@@ -82,7 +88,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: auto;
   height: auto;
   background: rgba(0, 0, 0, .7);
   border-radius: 1vw;
@@ -101,15 +107,10 @@
   display: none;
 }
 
-p {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
-}
-
 h2 {
   position: relative;
   text-align: center;
   font-size: 4rem;
-  font-family: "courier new", courier, monospace;
   font-weight: bold;
 }
 

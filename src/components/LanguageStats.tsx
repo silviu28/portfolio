@@ -9,7 +9,7 @@ const LanguageStats: React.FC = () => {
     }, []);
 
     return (
-        <p>
+        <p style={{textAlign: "center"}}>
             C#: {counts[0]}, Java: {counts[1]}, JS/TS: {counts[2]}, Python: {counts[3]}
         </p>
     )

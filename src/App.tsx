@@ -68,8 +68,9 @@ function App() {
     };
 
     return (<>
-        <h2 className={"fade-in"}>Silviu</h2>
+        <h2 style={{fontWeight: "bolder"}}>Silviu</h2>
         <LanguageStats/>
+        <br/>
 
         <ProjectModal isOpen={modalOpen} closeEvent={closeModal}>
             {modalContent}
@@ -114,6 +115,8 @@ function App() {
                 <h2>Android, Java, Bluetooth, Arduino</h2>
             </ProjectContainer>
         </div>
+        <br/>
+        <p style={{textAlign: "center"}}>© 2025 Bunduc Silviu-Cristian. All rights reserved.</p>
     </>);
 }
 
